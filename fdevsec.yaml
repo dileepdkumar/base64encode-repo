@@ -1,0 +1,27 @@
+version: v1
+
+id:
+  org: e5b26e58-e594-48a4-9079-70c4eedb6ef4
+  app: bc8027c4-0ef0-4820-a412-f3bc864eeeaa
+
+# Optional parameters.
+scanners:
+- secret
+
+languages:
+- JavaScript
+- Java
+- C
+- C++
+- Pyhton
+- Go
+- Ruby
+- Php
+
+dast:
+url: http://af2b0327b8f7d4520ad8effe5321917b-964645933.us-east-1.elb.amazonaws.com/
+fortipentest_scanner: false #true|false
+full_scan: true #true|false
+     
+resource:
+  serial_scan: false #true|false
